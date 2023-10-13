@@ -32,7 +32,7 @@ paho-mqtt
 # This mainly affects some ARM builds, which unlike the other builds ignores "ARG CRYPTOGRAPHY_DONT_BUILD_RUST=1"
 # so without this pinning, the newer versions on ARM will forcefully try to build rust, which results in "rust compiler not found"
 # (introduced once apprise became a dep)
-cryptography~=3.4
+cryptography~=41.0.4
 
 # Used for CSS filtering
 bs4
@@ -46,7 +46,7 @@ selenium~=4.1.0
 # https://stackoverflow.com/questions/71652965/importerror-cannot-import-name-safe-str-cmp-from-werkzeug-security/71653849#71653849
 # ImportError: cannot import name 'safe_str_cmp' from 'werkzeug.security'
 # need to revisit flask login versions
-werkzeug~=2.0.0
+werkzeug~=2.2.3
 
 # Templating, so far just in the URLs but in the future can be for the notifications also
 jinja2~=3.1
